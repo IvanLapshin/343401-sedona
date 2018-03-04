@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ivan Klevakin](https://up.htmlacademy.ru/htmlcss/20/user/343401).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Мишагин](https://up.htmlacademy.ru/htmlcss/20/user/118967).
 
 ---
 
