@@ -5,7 +5,6 @@
 	<title>HTML Academy: Седона</title>
 </head>
 <body>
-
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
@@ -19,7 +18,6 @@
 			</ul>
 		</nav>
 	</header>
-
 	<main class="container">
 		<h1 class="visually-hidden">Добро пожаловать в Седону</h1>
 		<img src="http://placehold.it/mainPicture" alt="SEDONA">
@@ -80,10 +78,28 @@
 			<p>Укажите предполагаемые даты поездки,<br>
 				и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>
-			<!--  Здесь будет форма и карта-->
+			<form class="search-hotel-form" action="https://echo.htmlAcademy.ru" method="post">
+				<h4 class="search-hotel-title">Поиск Гостиницы в Седоне</h4>
+				<p class="search-hotel-item">
+					<label for="arrival-date">Дата Заезда:</label>
+					<input id="arrival-date" type="text" name="arrival" value="" placeholder="24.04.2017">
+				</p>
+				<p class="search-hotel-item">
+					<label for="departure-date">Дата Выезда:</label>
+					<input id="departure-date" type="text" name="departure" value="" placeholder="04.07.2017">
+				</p>
+				<p class="search-hotel-item">
+					<label for="adults-quantity">Взрослые:</label>
+					<input id="adults-quantity" type="number" name="adults" value="" placeholder="2">
+				</p>
+				<p class="search-hotel-item">
+					<label for="сhildren-quantity">Дети:</label>
+					<input id="сhildren-quantity" type="number" name="children" value="" placeholder="0">
+				</p>
+				<button class="button" type="submit">Найти</button>
+			</form>
 		</section>
 	</main>
-
 	<footer class="main-footer">
 		<b>#visitsedona</b>
 		<div class="footer-social">
@@ -97,6 +113,5 @@
 			<img src="http://placehold.it/logo" alt="Логотип html academy">
 		</a>
 	</footer>
-
 </body>
 </html>
