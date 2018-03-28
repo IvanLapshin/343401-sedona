@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -14,11 +16,11 @@
 				<li><a href="#info">Информация</a></li>
 				<li><a href="#photoAndVideo">Фото и Видео</a></li>
 				<li><a href="#mapOfState">Карта Штата</a></li>
-				<li><a href="#hotels">Гостиницы</a></li>
+				<li><a class="active" href="#hotels">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main class="container">
+	<main class="container-catalog">
 		<h1 class="visually-hidden">Фильтр Поиска Жилья</h1>
 		<section class="search-filter">
 			<form class="search-filter-form" action="https://echo.htmlAcademy.ru" method="post">
@@ -81,34 +83,34 @@
 			</div>
 			<ul class="search-result-list">
 				<li class="search-result-hotel">
-					<h4 class="hotel-name">AMARA RESORT & SPA</h4>
-					<img src="http://placehold.it/AmaraResortSpaPhoto" alt="AMARA RESORT & SPA Фото">
+					<h4 class="hotel-name"><a href="#AMARA">AMARA RESORT & SPA</a></h4>
+					<img src="img/amara-resort-spa.jpg" alt="AMARA RESORT & SPA Фото">
 					<span class="hotel-type">Гостиница</span>
 					<span class="hotel-price">От 4000 Р.</span>
 					<span class="hotel-stars">5</span>
-					<span class="hotel-rating">8.5</span>
-					<a class="button" href="#">Подробнее</a>
-					<a class="button" href="#">Забронировать</a>
+					<span class="hotel-rating">Рейтинг: 8.5</span>
+					<a class="button more-info" href="#">Подробнее</a>
+					<a class="button book" href="#">Забронировать</a>
 				</li>
 				<li class="search-result-hotel">
-					<h4 class="hotel-name">DESERT QUAIL INN</h4>
-					<img src="http://placehold.it/DesertQuailInnPhoto" alt="DESERT QUAIL INN Фото">
+					<h4 class="hotel-name"><a href="#DESERT">DESERT QUAIL INN</a></h4>
+					<img src="img/desert-qual-inn.jpg" alt="DESERT QUAIL INN Фото">
 					<span class="hotel-type">Мотель</span>
 					<span class="hotel-price">От 3000 Р.</span>
 					<span class="hotel-stars">3</span>
-					<span class="hotel-rating">8.9</span>
-					<a class="button" href="#">Подробнее</a>
-					<a class="button" href="#">Забронировать</a>
+					<span class="hotel-rating">Рейтинг: 8.9</span>
+					<a class="button more-info" href="#">Подробнее</a>
+					<a class="button book" href="#">Забронировать</a>
 				</li>
 				<li class="search-result-hotel">
-					<h4 class="hotel-name">VILLAS AT POCO DIABLO</h4>
-					<img src="http://placehold.it/VillasAtPocoDiabloPhoto" alt="VILLAS AT POCO DIABLO Фото">
+					<h4 class="hotel-name"><a href="#DESERT">VILLAS AT POCO DIABLO</a></h4>
+					<img src="img/villas-at-poco-diablo.jpg" alt="VILLAS AT POCO DIABLO Фото">
 					<span class="hotel-type">Апартаменты</span>
 					<span class="hotel-price">От 2000 Р.</span>
 					<span class="hotel-stars">2</span>
-					<span class="hotel-rating">9.2</span>
-					<a class="button" href="#">Подробнее</a>
-					<a class="button" href="#">Забронировать</a>
+					<span class="hotel-rating">Рейтинг: 9.2</span>
+					<a class="button more-info" href="#info">Подробнее</a>
+					<a class="button book" href="#">Забронировать</a>
 				</li>
 			</ul>
 		</section>
@@ -116,15 +118,18 @@
 	<footer class="main-footer">
 		<b>#visitsedona</b>
 		<div class="footer-social">
-			<ul>
+			<ul class="social-links">
 				<li><a class="social-button" href="#">Twitter</a></li>
 				<li><a class="social-button" href="#">Facebook</a></li>
 				<li><a class="social-button" href="#">Youtube</a></li>
 			</ul>
 		</div>
-		<a href="#htmlAcademy" class="main-footer-htmlAcademy">
-			<img src="http://placehold.it/logo" alt="Логотип html academy">
-		</a>
+		<div class="academy">
+			<span>Website By</span>
+			<a href="#" class="main-footer-htmlAcademy">
+				<img src="http://placehold.it/logo" alt="Логотип html academy">
+			</a>
+		</div>
 	</footer>
 </body>
 </html>
